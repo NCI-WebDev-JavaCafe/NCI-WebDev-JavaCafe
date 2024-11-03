@@ -1,6 +1,11 @@
 /* style for contact form*/
-.container {
-    margin-top: 50px;
+.contact-us {
+    background-image: url('../images/contact-us.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 20px; 
+    border-radius: 8px;
 }
 
 .feedback-input {
@@ -20,4 +25,22 @@
 
 .map-container {
     margin-top: 30px;
+}
+
+/* style for contact-us pop up confirmation */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+.modal-body {
+    font-size: 16px;
 }
