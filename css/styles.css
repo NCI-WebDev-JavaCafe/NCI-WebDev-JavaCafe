@@ -1,0 +1,23 @@
+/* style for contact form*/
+.container {
+    margin-top: 50px;
+}
+
+.feedback-input {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.feedback-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.submit-btn {
+    width: 100%;
+}
+
+.map-container {
+    margin-top: 30px;
+}
