@@ -44,3 +44,17 @@
 .modal-body {
     font-size: 16px;
 }
+
+/* Subscription service - start */
+
+/*adapted from https://www.w3schools.com/cssref/pr_background-image.php and https://stackoverflow.com/questions/12605908/change-background-image-opacity*/
+.subscription-section {
+  background-image: url("../images/coffee-beans.avif");
+  background-color: rgba(255,255,255,0.6);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Subscription service - end */
