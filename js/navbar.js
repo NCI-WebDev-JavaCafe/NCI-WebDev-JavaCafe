@@ -1,4 +1,9 @@
 
+/* adapted from:
+   https://www.quora.com/How-do-you-make-the-navigation-bar-in-all-your-pages-without-having-to-rewrite-the-code-in-each-page-separately-JavaScript-HTML-CSS-and-development
+   https://stackoverflow.com/questions/6964503/using-javascript-to-highlight-current-page-in-navbar
+   https://gabrieleromanato.name/javascript-how-to-highlight-the-current-page-in-a-navigation-menu */
+
 // Wait for the entire DOM to load before running this script
 document.addEventListener("DOMContentLoaded", function () {
 
