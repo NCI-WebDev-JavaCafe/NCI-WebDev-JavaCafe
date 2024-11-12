@@ -1,3 +1,24 @@
+/* Set background image for blog page */
+.blog-page {
+    background-image: url('/images/blog-background.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 8px;
+    padding: 40px;
+    margin: 20px;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Image size for all images on blog page */
+.blog-size-image {
+    width: 260px;
+    height: 180px;
+}
+
+
+
 /* style for contact form*/
 .contact-us {
     background-image: url('../images/contact-us.jpg');
