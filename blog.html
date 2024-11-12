@@ -1,68 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Java Coffee Shop</title>
+  <title>Java Coffee Shop Blog</title>
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/0f0d843864.js" crossorigin="anonymous"></script>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/styles.css">
-
+  <!-- Blog-specific Stylesheet -->
+  <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-
   <!-- Navigation bar -->
   <div id="navbar-container"></div>
   <script src="./js/navbar.js"></script>
 
-  <div class="container pt-4">
-    <h1>Blog Page</h1>
-    <h1>My First Bootstrap Page</h1>
-    <p>This part is inside a .container-fluid class.</p>
-    <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
+  <div class="container">
+    <h1 class="text-center">The Java Cafe Weekly Blogs</h1>
+    <br>
+    <div id="post-only" class="blog-page">
+      <!-- Blog Post 1 -->
+      <div class="row blog-post" id="post-1">
+        <div>
+          <h2> <i class="fa-solid fa-earth-americas fa-beat-fade fa-lg"></i> #1 Exploring Chile’s Coffee Culture: Tradition and a Love for Café con Leche</h2>
+        </div>
+        <br>
+        <div>
+          <img src="images\chile-blog-page.jpg" class="img-fluid rounded blog-size-image" alt="Chile Picture">
+        </div>
+        <br>
+        <div>
+          <p id="post-text-1" class="post-text"> 
+            Chile may not be as famous for coffee as its neighbors, but its coffee culture is rich, evolving, and deeply intertwined with its social fabric.<br>
+            From traditional café con leche to modern specialty coffee shops, Chilean coffee culture is an intriguing blend of history, social rituals, and new trends.<br><br>
+            Chile’s coffee scene has traditionally centered around instant coffee, with café instantáneo being the most popular form for years.<br>
+            However, a new wave of coffee culture has been brewing in cities like Santiago and Valparaíso, where locals are developing a taste for freshly brewed, high-quality coffee.<br>
+            Many Chileans now embrace coffee shops that offer a more artisanal experience, focusing on the bean's origin, roasting style, and brewing method.
+          </p>
+          <a id="read-more-1" class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div>
+          <br>
+          <p>
+            <i class="fa-solid fa-user"></i> By Eli
+            | <i class="fa-solid fa-calendar-days"></i> Dec 30th, 2024
+            | <i class="fa-solid fa-share-from-square"></i> <a href="#"> 89 Shares</a>
+          </p>
+        </div>
+        <hr>
+      </div>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cupiditate at, blanditiis ratione reprehenderit doloremque culpa voluptatum adipisci tempora. Quasi nam fugit alias impedit, eligendi ea debitis illo exercitationem laborum!</p>
+      <!-- Blog Post 2 -->
+      <div class="row blog-post" id="post-2">
+        <div>
+          <h2> <i class="fa-solid fa-earth-americas fa-beat-fade fa-lg"></i> #2 The Rich Culture of Cappuccino in Brazil: A Blend of Tradition and Innovation</h2>
+        </div>
+        <br>
+        <div>
+          <img src="images/brazil-blog-page.jpg" class="img-fluid rounded blog-size-image" alt="Brazil picture">
+        </div>
+        <br>
+        <div>
+          <p id="post-text-2" class="post-text">
+            The Brazilian version of cappuccino is a delightful blend of espresso, steamed milk, and sometimes, a sprinkle of cocoa or cinnamon. What makes it unique is the addition of sweetened condensed milk, which gives it a creamy and sweet flavor, making it different from the traditional Italian cappuccino. <br>
 
-    <!-- footer -->
+            While in Italy cappuccino is typically enjoyed as a breakfast drink, in Brazil, it’s consumed throughout the day—whether as a morning pick-me-up or as a social drink shared with friends and family in cafes. The Brazilian cappuccino is often paired with sweet pastries, adding to the cozy, indulgent experience. <br>
+            
+            Brazilian cappuccino is not only a drink but a part of the country's vibrant cafe culture. It's a drink that unites people, fostering conversation and connection. Whether you’re enjoying a cappuccino on the streets of São Paulo or relaxing at home, it’s always a great way to savor a little piece of Brazil’s coffee culture. <br>
+          </p>
+          <a id="read-more-2" class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div>
+          <br>
+          <p>
+            <i class="fa-solid fa-user"></i> by Tiago
+            | <i class="fa-solid fa-calendar-days"></i> Dec 23rd, 2024
+            | <i class="fa-solid fa-share-from-square"></i> <a href="#"> 97 Shares</a>
+          </p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="row blog-post" id="post-3">
+        <div>
+          <h2><i class="fa-solid fa-earth-americas fa-beat-fade fa-lg"></i> #3 Venezuelan Coffee Culture: A Legacy of Bold Flavors and Tradition</h2>
+        </div>
+        <br>
+        <div>
+          <img src="images/venezuela-blog-page.jpg" class="img-fluid rounded blog-size-image" alt="Venezuela Picture">
+        </div>
+        <br>
+        <div>
+          <p id="post-text-3" class="post-text">
+            Venezuela has a rich coffee heritage, producing some of the world’s finest coffee beans thanks to its ideal climate and fertile soil.<br>
+            Coffee is deeply woven into Venezuelan culture, enjoyed daily by people of all ages and backgrounds.<br><br>
+
+            Traditionally, Venezuelans favor a strong, dark coffee known as "tinto," often served black and unsweetened.<br>
+            However, “café con leche,” a coffee with milk, is also very popular, especially for breakfast.<br>
+            In bustling cities like Caracas, you'll find small cafés and street vendors serving coffee to locals looking for their daily caffeine fix.<br><br>
+
+            Venezuelan coffee is known for its smooth, slightly sweet flavor profile, often with hints of chocolate and nutty undertones.<br>
+            Despite the country’s economic challenges, coffee production remains a source of pride, with some coffee farms using traditional methods passed down through generations.<br>
+            Whether you’re enjoying a cup of Venezuelan coffee at home or at a local café, each sip tells the story of a country with a longstanding passion for quality coffee.
+          </p>
+          <a id="read-more-3" class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div>
+          <br>
+          <p>
+            <i class="fa-solid fa-user"></i> By Eli
+            | <i class="fa-solid fa-calendar-days"></i> Dec 16th, 2024
+            | <i class="fa-solid fa-share-from-square"></i> <a href="#"> 77 Shares</a>
+          </p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Blog Post 4 -->
+      <div class="row blog-post" id="post-4">
+        <div>
+          <h2> <i class="fa-solid fa-earth-americas fa-beat-fade fa-lg"></i>  #4 Café Cubano: The Heart and Soul of Cuban Coffee Culture</h2>
+        </div>
+        <br>
+        <div>
+          <img src="images\cuba-blog-page.jpg" class="img-fluid rounded blog-size-image" alt="Cuba Picture">
+        </div>
+        <br>
+        <div>
+          <p id="post-text-4" class="post-text">
+            Cuba is known worldwide for its robust coffee culture, where each cup holds the essence of tradition, flavor, and community. Cuban coffee, or Café Cubano, is famous for its bold flavor and unique brewing style. Strong, rich, and often sweetened with a thick layer of espuma (a creamy sugar foam), Cuban coffee reflects the island’s vibrant culture and love for intense flavors.<br><br>
+
+            In Cuba, coffee isn’t just a drink; it’s a social ritual. The day often begins with a quick shot of Café Cubano, a concentrated espresso sweetened during brewing to create a distinct foam. This intense, sweet espresso is usually enjoyed in the morning but is also a go-to treat throughout the day, shared with friends, family, and neighbors.<br><br>
+
+            Coffee History and Production:<br> Cuban coffee production dates back to the 18th century, with the island’s climate proving ideal for coffee cultivation. Coffee farms, particularly in the Sierra Maestra mountains, have produced beans known for their earthy, slightly chocolatey flavor. Despite economic challenges, coffee remains a proud part of Cuba’s agricultural tradition.<br><br>
+
+            Unique Preparations:<br> Apart from Café Cubano, another popular coffee style is the Cortadito—a shot of espresso “cut” with a small amount of steamed milk. This variation offers a softer, milky contrast to the typical strong brew. In the afternoons, many Cubans also enjoy Café con Leche, an espresso served with hot milk, often accompanied by a piece of toasted Cuban bread for dipping.<br><br>
+
+            Cuban Coffee Abroad:<br> Beyond the island, Cuban coffee has influenced cafes in Miami, New York, and other places with large Cuban communities, where Café Cubano and Cortaditos remain staples of local culture. Many visitors find that savoring these drinks feels like a direct connection to Cuba’s warmth and community spirit.<br><br>
+
+            Whether enjoyed at a street-side stall in Havana or in a bustling café abroad, Cuban coffee is more than a beverage—it’s a taste of Cuba’s rich heritage and welcoming nature. Each cup tells a story of resilience, community, and an enduring love for one of the world’s strongest brews.
+          </p>
+          <a id="read-more-4" class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div>
+          <br>
+          <p>
+            <i class="fa-solid fa-user"></i> By Jane
+            | <i class="fa-solid fa-calendar-days"></i> Dec 9th, 2024
+            | <i class="fa-solid fa-share-from-square"></i> <a href="#"> 50 Shares</a>
+          </p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Blog Post 5 -->
+      <div class="row blog-post" id="post-5">
+        <div>
+          <h2> <i class="fa-solid fa-earth-americas fa-beat-fade fa-lg"></i> #5 Guatemalan Coffee: A Journey Through Flavor and Tradition </h2>
+        </div>
+        <br>
+        <div>
+          <img src="images/guatemala-blog-page.jpg" class="img-fluid rounded blog-size-image" alt="Guatemala Picture">
+        </div>
+        <br>
+        <div>
+          <p id="post-text-5" class="post-text">
+            Guatemala is renowned for its high-quality coffee beans, grown in lush volcanic soil and high-altitude regions. With its unique terroir, Guatemalan coffee offers complex flavors, often with notes of chocolate, spice, and a hint of fruity acidity.<br><br>
+
+            Coffee plays an essential role in Guatemalan culture and economy, as it’s one of the country’s primary exports. Small family farms have produced coffee for generations, with each farm adding its own special techniques to create a diverse coffee landscape. Regions like Antigua, Huehuetenango, and Atitlán are especially famous for their distinctive beans, each area bringing its unique flavors and qualities to the coffee.<br><br>
+
+            A Taste of Guatemalan Coffee:<br> Guatemalan coffee is typically rich and full-bodied. Many locals drink their coffee black to fully appreciate its natural flavors, though sugar is often added for sweetness. Unlike the coffee culture in many countries, Guatemalans don’t generally add milk, preferring instead to savor the pure, rich taste of the brew.<br><br>
+
+            Social and Cultural Importance:<br> In Guatemala, coffee isn’t just a drink; it’s a way of life. Coffee time, often enjoyed in the morning or afternoon, is a chance to relax, catch up with friends, and discuss local news. Many homes have a special coffee-making ritual, with traditional pots and filtered brews taking center stage.<br><br>
+
+            Global Influence:<br> Guatemalan coffee is beloved worldwide, and its unique flavor profile has made it a staple in specialty coffee shops. As more people around the globe seek ethically-sourced and high-quality beans, Guatemalan coffee continues to shine as an example of excellence in coffee production.<br><br>
+
+            Whether you’re enjoying a cup of Guatemalan coffee at home or in a local cafe, each sip transports you to the misty highlands and volcanic mountains where it all begins. With its bold, rich flavors, Guatemalan coffee is a true taste of the country’s natural beauty and coffee-growing expertise.
+          </p>
+          <a id="read-more-5" class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div>
+          <br>
+          <p>
+            <i class="fa-solid fa-user"></i> By John
+            | <i class="fa-solid fa-calendar-days"></i> Dec 2nd, 2024
+            | <i class="fa-solid fa-share-from-square"></i> <a href="#"> 34 Shares</a>
+          </p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Blog Post 6 -->
+      <div class="row blog-post" id="post-6">
+        <div>
+          <h2> <i class="fa-solid fa-earth-americas fa-beat-fade fa-lg"></i> #6 Nicaraguan Coffee: A Rich Heritage Brewed in Every Cup </h2>
+        </div>
+        <br>
+        <div>
+          <img src="images/nicaragua-post-page.jpg" class="img-fluid rounded blog-size-image" alt="Nicaragua Picture">
+        </div>
+        <br>
+        <div>
+          <p id="post-text-6" class="post-text">
+            Nicaragua is home to some of the finest coffee in Central America, celebrated for its unique flavor profile and high-quality beans.<br> Nestled in mountainous regions like Matagalpa and Jinotega, coffee farms thrive in ideal climates, producing beans known for their mild acidity and balanced flavor.<br>
+
+            For many Nicaraguans, coffee is more than just a drink; it’s a source of pride and a part of everyday life.<br> The traditional Nicaraguan coffee experience often includes rich, freshly brewed coffee enjoyed in the company of family and friends, fostering a sense of community.<br>
+
+            As the specialty coffee scene grows, local farmers are increasingly focusing on sustainable practices and direct trade, enhancing Nicaragua’s reputation in the global coffee market.<br> Whether you’re savoring a cup in the heart of Managua or at a cozy café elsewhere, Nicaraguan coffee captures the warmth and spirit of this vibrant country.
+          </p>
+          <a id="read-more-6" class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div>
+          <br>
+          <p>
+            <i class="fa-solid fa-user"></i> By Emily
+            | <i class="fa-solid fa-calendar-days"></i> Nov 25th, 2024
+            | <i class="fa-solid fa-share-from-square"></i> <a href="#"> 42 Shares</a>
+          </p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Blog Post 7 -->
+      <div class="row blog-post" id="post-7">
+        <div>
+          <h2> <i class="fa-solid fa-earth-americas fa-beat-fade fa-lg"></i> #7 Costa Rican Coffee: A Taste of Pure Perfection from the Highlands </h2>
+        </div>
+        <br>
+        <div>
+          <img src="images/costarica-post-page.jpg" class="img-fluid rounded blog-size-image" alt="Costa Rica Picture">
+        </div>
+        <br>
+        <div>
+          <p id="post-text-7" class="post-text">
+            Costa Rica’s coffee is renowned worldwide for its exceptional quality and distinct flavor, thanks to the country’s perfect growing conditions.
+            The high-altitude regions like Tarrazú and the Central Valley are famous for producing some of the best Arabica beans, known for their bright acidity and full-bodied taste.<br><br>
+
+            Coffee has long been an integral part of Costa Rican culture, with locals taking pride in their coffee’s rich heritage.
+            In Costa Rica, coffee is often consumed at all times of the day, from the traditional “cafecito” in the morning to a comforting cup shared with friends in the evening.
+            The country’s commitment to sustainability and environmental responsibility is reflected in its coffee production methods, with many farmers embracing organic and fair-trade practices.
+            Whether you’re enjoying a cup in a bustling San José café or on a quiet farm tour, Costa Rican coffee offers a taste of the country’s dedication to quality and tradition.
+          </p>
+          <a id="read-more-7" class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div>
+          <br>
+          <p>
+            <i class="fa-solid fa-user"></i> By Michael
+            | <i class="fa-solid fa-calendar-days"></i> Nov 18th, 2024
+            | <i class="fa-solid fa-share-from-square"></i> <a href="#"> 55 Shares</a>
+          </p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Blog Post 8 -->
+      <div class="row blog-post" id="post-8">
+        <div>
+          <h2> <i class="fa-solid fa-earth-americas fa-beat-fade fa-lg"></i> #8 Exploring Argentina's Evolving Coffee Scene: From Tradition to Innovation</h2>
+        </div>
+        <br>
+        <div>
+          <img src="images/argentina-post-page.jpg" class="img-fluid rounded blog-size-image" alt="Argentina Picture">
+        </div>
+        <br>
+        <div>
+          <p id="post-text-8" class="post-text">
+            While Argentina may be more famous for its wine and mate, the country's coffee culture is slowly growing in prominence.
+            In recent years, coffee shops have popped up across Buenos Aires, showcasing an evolving appreciation for specialty coffee.<br><br>
+
+            Traditionally, Argentinians have favored coffee drinks like "café con leche" (coffee with milk) and "cortado" (a shot of espresso with a splash of steamed milk), enjoyed alongside pastries or toast.
+            But with the influence of global coffee trends, artisanal cafés are now offering a wider variety of coffee experiences, from pour-over brews to espresso-based drinks.
+            The rise of specialty coffee culture in Argentina highlights the growing interest in quality beans, sustainable farming practices, and unique brewing methods.
+            Whether in a cozy café or at home, coffee in Argentina is becoming a beverage that brings people together, enjoyed in good company and with the country’s signature warmth.
+          </p>
+          <a id="read-more-8" class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div>
+          <br>
+          <p>
+            <i class="fa-solid fa-user"></i> By Laura
+            | <i class="fa-solid fa-calendar-days"></i> Nov 11th, 2024
+            | <i class="fa-solid fa-share-from-square"></i> <a href="#"> 60 Shares</a>
+          </p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Blog Post 9 -->
+      <div class="row blog-post" id="post-9">
+        <div>
+          <h2> <i class="fa-solid fa-earth-americas fa-beat-fade fa-lg"></i> #9 Sipping Puerto Rico: A Deep Dive into the Island’s Coffee Culture </h2>
+        </div>
+        <br>
+        <div>
+          <img src="images/puertorico-post-page.jpg" class="img-fluid rounded blog-size-image" alt="Puerto Rico Picture">
+        </div>
+        <br>
+        <div>
+          <p id="post-text-9" class="post-text">
+            Puerto Rico has a long history of coffee cultivation, and the island's coffee culture is deeply ingrained in its daily life. Known for producing some of the world’s finest Arabica beans, Puerto Rican coffee is a staple of the island’s identity. Over the years, coffee has played a central role in Puerto Rican traditions, from the morning café con leche to the strong and aromatic café espresso. <br><br>
+
+            In the past, the island relied heavily on traditional brewing methods, with coffee often prepared in a percolator or a stovetop espresso maker. However, in recent years, Puerto Rico has experienced a coffee renaissance, with modern cafes and roasters embracing specialty coffee practices. Today, coffee lovers can enjoy a variety of brewing methods, from pour-over to siphon coffee, with an emphasis on preserving the unique flavors of Puerto Rican-grown beans. <br><br>
+
+            Puerto Rico’s coffee culture is also a social activity. It’s common for friends and family to gather around a cup of coffee, often accompanied by sweet treats like pastelillos or flan. The island’s café culture also fosters connection and conversation, making it a vital part of daily life. <br><br>
+
+            Whether sipped leisurely on a morning stroll through Old San Juan or enjoyed at a hip café in Santurce, Puerto Rican coffee is more than just a beverage—it’s an experience, a reflection of the island’s rich history, and a symbol of its ongoing coffee culture evolution. <br><br>
+          </p>
+          <a id="read-more-9" class="btn btn-primary" href="#">Read more</a>
+        </div>
+        <div>
+          <br>
+          <p>
+            <i class="fa-solid fa-user"></i> By Robert
+            | <i class="fa-solid fa-calendar-days"></i> Nov 4th, 2024
+            | <i class="fa-solid fa-share-from-square"></i> <a href="#"> 62 Shares</a>
+          </p>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div id="unique-pagination" class="text-center mt-3"></div>
+
+    <!-- Footer -->
     <div id="footer-container"></div>
     <script src="./js/footer.js"></script>
-    
   </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+  <!-- Blog JS (Pagination) -->
+  <script src="./js/blog.js"></script>
 </body>
 </html>
