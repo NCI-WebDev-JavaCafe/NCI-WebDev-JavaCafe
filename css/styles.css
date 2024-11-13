@@ -18,8 +18,8 @@
 }
 
 
-
-/* style for contact form*/
+/* Contact Us */
+/* Style Contact Us form*/
 .contact-us {
     background-image: url('../images/contact-us.jpg');
     background-size: cover; 
@@ -48,7 +48,7 @@
     margin-top: 30px;
 }
 
-/* style for contact-us pop up confirmation */
+/* Style for Contact-Us modal confirmation */
 .modal-content {
     border-radius: 10px;
 }
@@ -64,6 +64,19 @@
 
 .modal-body {
     font-size: 16px;
+}
+
+/* Style for 'Thank You' modal confirmation */
+#thankYouModal .modal-header {
+    background-color: #28a745;
+}
+
+#thankYouModal .modal-footer {
+    justify-content: center; 
+}
+
+#thankYouModal .modal-body {
+    font-size: 18px;
 }
 
 /* Subscription service - start */

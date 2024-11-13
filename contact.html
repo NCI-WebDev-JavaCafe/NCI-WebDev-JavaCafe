@@ -87,27 +87,49 @@
   </div>
 </div>
 
+ <!-- Thank You Custom Pop-up Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              Thank you for contacting us, our team will get back to you as soon as possible.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+          </div>
+      </div>
+  </div>
+</div>
+
 
   <!-- Footer -->
   <div id="footer-container"></div>
   <script src="./js/footer.js"></script>
-
+  
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        var myModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
-        myModal.show();
+<script>
+  // Form submission event handler
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
 
-        document.getElementById('confirmSubmit').onclick = () => {
-            myModal.hide();
-            this.submit();
-        };
-    });
+      // Show the confirmation modal
+      var myModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+      myModal.show();
+
+      // If user clicks 'Submit' in confirmation modal, show the 'Thank You' modal
+      document.getElementById('confirmSubmit').onclick = () => {
+          myModal.hide(); // Hide confirmation modal
+          var thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+          thankYouModal.show(); // Show thank you modal
+      };
+  });
 </script>
-
 </body>
 </html>
 
