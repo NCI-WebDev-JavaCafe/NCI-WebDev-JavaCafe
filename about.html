@@ -8,28 +8,22 @@
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
-
 </head>
-<body>
 
+<body>
   <!-- Navigation bar -->
   <div id="navbar-container"></div>
   <script src="./js/navbar.js"></script>
 
   <div class="container my-4">
-    
     <div class="container my-5 text-center">
-      
       <!-- adapted from https://getbootstrap.com/docs/4.0/content/typography/ -->
       <h2 class="display-4">Our Journey to Quality Coffee</h2>
 		  <p class="lead">From a simple idea to a love for great coffee, this is our story.</p>
-      
       <div class="row my-5">
         <div class="col-md-6">
-
           <!-- adapted from https://getbootstrap.com/docs/5.3/components/carousel/ -->
           <div id="aboutCarouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -52,54 +46,65 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          
         </div>
-        <div class="col-md-6">
-          <h3>How It All Began</h3>
-          <p>Our story began when 3 college friends reunited to tackle a challenging web development project.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque fugit odio similique suscipit neque blanditiis eius eum dolor nemo omnis, ea, fugiat dicta. Porro aliquid ullam architecto minima veniam. </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus expedita tempore ex quibusdam. Ratione ipsum labore est dolores, soluta rem eveniet non reprehenderit harum ex odio quibusdam, consequuntur iure laudantium?</p>
+        <div class="col-md-6 text-start">
+          <h3 class="text-center">How It All Began</h3>
+          <p>Our story began when 2 college friends reunited to tackle a challenging web development project.
+            In between coding sessions and project deadlines, we found ourselves gathering around coffee. It was more than a drink; it was fuel for our ideas, a reason to come together, and a small escape from the stress of college life. Every sip seemed to spark a new idea or provide a moment of clarity, making us realize that coffee was the heart of our journey.
+          </p>
+          <p>
+            As we graduated and went our separate ways, the idea lingered. A few years later, we decided it was time to turn this passion into reality. Our goal was simple yet ambitious: to create a space where others could find the same inspiration and comfort we found in a great cup of coffee. We wanted to craft a café experience that felt welcoming and authentic, a place where every visitor could feel at home, whether they were working on a project, meeting up with friends, or simply enjoying a quiet moment alone.
+          </p>
+          <p>
+            Today, our café isn’t just a business; it’s a place that embodies our story and our journey. Each cup served is a reminder of the long nights, the big dreams, and the friendships that made it all possible. We’re here to share that journey with you, one cup at a time.
+          </p>
         </div>
+      </div>
 
+      <div class="row text-center card border-dark">
+        <h3 class="card-header">Our Mission</h3>
+        <p>
+          Our mission is simple: to provide an exceptional coffee experience that inspires, energizes, and connects.
+        </p>
       </div>
 
       <div class="row my-5">
-        <h3>Our Mission</h3>
-        <p>Our mission is to provide you the best coffee experience.</p>
-      </div>
-
-      <div class="row my-5">
-        <h3>Our Values</h3>
-        <div class="col-md-4">
+        <h3 class="card card-header border-dark" >Our Values</h3>
+        <div class="col-md-4 card border-dark">
           <h5>Quality</h5>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis, iste eaque sit unde doloribus expedita accusamus ipsum mollitia accusantium laboriosam, tempore animi recusandae odio, eligendi assumenda! Animi, ipsam nam?</P>
+          <p class="text-start">
+            Quality is at the heart of everything we do. From selecting premium beans to mastering precise brewing techniques, we’re dedicated to delivering coffee that exceeds expectations. We source our beans from trusted farmers who are as passionate about coffee as we are. Our baristas are skilled artisans, trained to craft each drink to perfection. Because to us, quality isn’t just a standard; it’s a promise we make with every cup.
+          </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 card border-dark">
           <h5>Community</h5>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repudiandae doloribus cum eum eius omnis saepe necessitatibus beatae, minima deleniti! Dolor illum, similique ex sunt id minus optio aliquid quia!</P>
+          <p class="text-start">
+            Community is more than a value; it’s our foundation. We believe in building connections and fostering a sense of belonging. Our café is a gathering place for people to relax, meet, and share stories. Whether it’s through community events, supporting local artists, or providing a comfortable space to unwind, we are committed to making a positive impact. Our doors are open to all, and we hope to be a meaningful part of our neighborhood’s heartbeat.
+          </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 card border-dark">
           <h5>Sustainability</h5>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem corporis porro eius aspernatur, ratione earum tempore debitis esse animi. Voluptatem, molestias. Impedit facere sapiente dolor? Sint fugiat praesentium sunt?</P>
+          <p class="text-start">
+            Sustainability is a responsibility we take seriously. From eco-friendly packaging to sourcing coffee through ethical practices, we’re dedicated to reducing our environmental footprint. We work with farmers who use sustainable growing methods and seek partnerships that support fair wages and positive social impact. Our commitment to sustainability reflects our respect for the planet and our desire to create a better future—one that everyone can share in, sip by sip.
+          </p>
         </div>
       </div>
 
       <div class="row">
         <h3>Meet the Team</h3>
-        
         <!-- d-flex: each column is flex container so we can align them with align-items-stretch, so they have the same height  -->
         <div class="col-md-4 d-flex align-items-stretch">
-          
           <!-- code adapted from https://getbootstrap.com/docs/5.3/components/card/ -->
           <div class="card text-center mb-3" >
             <img src="./images/founder1.webp" class="card-img-top subs-card-img" alt="Founder 1">
             <div class="card-body">
-              <h5 class="card-title">John Doe </h5>
+              <h5 class="card-title">Tiago Dorigan </h5>
               <small class="text-muted">Founder</small>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum iusto obcaecati.</p>
+              <p class="card-text">
+                With a deep passion for coffee and a vision for quality, Tiago led the way in founding our café. His focus on detail and dedication to delivering the perfect cup have shaped our approach to coffee.
+              </p>
             </div>
           </div>
-
         </div>
         <div class="col-md-4 d-flex align-items-stretch">
 
@@ -107,39 +112,37 @@
           <div class="card text-center mb-3" >
             <img src="./images/founder2.webp" class="card-img-top subs-card-img" alt="Founder 2">
             <div class="card-body">
-              <h5 class="card-title">Jane Smith</h5>
+              <h5 class="card-title">Eli Dimitrova</h5>
               <small class="text-muted">Founder</small>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum iusto obcaecati.</p>
+              <p class="card-text">
+                Eli’s vision for creating a warm and inclusive café space has been key to our identity. Her background in design and her keen eye for detail ensure that every element—from decor to drink presentation—creates a welcoming atmosphere where everyone feels at home.
+              </p>
             </div>
           </div>
-
         </div>
+
         <div class="col-md-4 d-flex align-items-stretch">
-          
           <!-- code adapted from https://getbootstrap.com/docs/5.3/components/card/ -->
           <div class="card text-center mb-3" >
             <img src="./images/founder3.webp" class="card-img-top subs-card-img" alt="Founder 3">
             <div class="card-body">
-              <h5 class="card-title">Mary Jones</h5>
-              <small class="text-muted">Founder</small>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum iusto obcaecati.</p>
+              <h5 class="card-title">Isabella Costello</h5>
+              <small class="text-muted">CEO</small>
+              <p class="card-text">
+                Isabella’s strategic leadership and passion for quality drive our team forward. With a background in business and a deep appreciation for coffee culture, she ensures every decision aligns with our mission to deliver exceptional coffee and memorable experiences for every customer.
+              </p>
             </div>
           </div>
-          
         </div>
-        
       </div>
-
     </div>
 
     <!-- footer -->
     <div id="footer-container"></div>
     <script src="./js/footer.js"></script>
-    
   </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </body>
 </html>
