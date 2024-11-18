@@ -1,6 +1,6 @@
 
 // wait for the page to be completed loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", function() {
   
   // get all the elements with the attribute data-bs-toggle="modal", that is, all the <a> tags (links) that open the modal
   const imageLinks = document.querySelectorAll('[data-bs-toggle="modal"]');

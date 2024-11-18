@@ -1,12 +1,14 @@
+const typeSelect = document.getElementById("type");
+const grindSelect = document.getElementById("grind");
+const roastSelect = document.getElementById("roast");
+const sizeSelect = document.getElementById("size");
+const frequencySelect = document.getElementById("frequency");
+const priceDisplay = document.getElementById('priceDisplay');
+
 
 function calculatePrice(){
   
-  const typeSelect = document.getElementById("type");
-  const grindSelect = document.getElementById("grind");
-  const roastSelect = document.getElementById("roast");
-  const sizeSelect = document.getElementById("size");
-  const frequencySelect = document.getElementById("frequency");
-  const priceDisplay = document.getElementById('priceDisplay');
+  
 
   let price = 0;
 
@@ -60,3 +62,34 @@ function calculatePrice(){
 
 //calculate price when the pages load
 calculatePrice();
+
+
+// Form submission event handler
+document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+  
+  // Prevent form submission
+  event.preventDefault();
+
+  // Show the confirmation modal
+  var confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+  confirmationModal.show();
+
+  // If user clicks 'Submit' in confirmation modal, show the 'Thank You' modal
+  document.getElementById('confirmSubmit').onclick = () => {
+    
+    confirmationModal.hide(); // Hide confirmation modal
+    var thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+    thankYouModal.show(); // Show thank you modal
+
+    //clear the fields
+    typeSelect.value = "";
+    grindSelect.value = "";
+    roastSelect.value = "";
+    sizeSelect.value = "";
+    frequencySelect.value = "";
+    
+    calculatePrice();
+
+  };
+
+});
