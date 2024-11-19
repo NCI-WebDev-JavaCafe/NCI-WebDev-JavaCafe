@@ -90,7 +90,7 @@
               <div class="mb-3">
                 <!-- code adapted from https://getbootstrap.com/docs/5.3/forms/select/ -->
                 <label for="type" class="form-label">Type of Coffee</label>
-                <select id="type" name="type" class="form-select" required onchange="calculatePrice()">
+                <select id="type" name="type" class="form-select" required>
                   <option value="">Select Coffee Type</option>
                   <option value="ethiopia">Single Origin - Ethiopia</option>
                   <option value="colombia">Single Origin - Colombia</option>
@@ -105,7 +105,7 @@
               <!-- grind -->
               <div class="mb-3">
                 <label for="grind" class="form-label">Grind</label>
-                <select id="grind" name="grind" class="form-select" required onchange="calculatePrice()">
+                <select id="grind" name="grind" class="form-select" required>
                   <option value="">Select Grind Level</option>
                   <option value="whole">Whole Bean</option>
                   <option value="coarse">Coarse Grind (French Press)</option>
@@ -118,7 +118,7 @@
               <!-- roast -->
               <div class="mb-3">
                 <label for="roast" class="form-label">Roast</label>
-                <select id="roast" name="roast" class="form-select" required onchange="calculatePrice()">
+                <select id="roast" name="roast" class="form-select" required>
                   <option value="">Select Roast Level</option>
                   <option value="light">Light</option>
                   <option value="medium">Medium</option>
@@ -129,7 +129,7 @@
               <!-- bag size -->
               <div class="mb-3">
                 <label for="size" class="form-label">Size</label>
-                <select id="size" name="size" class="form-select" required onchange="calculatePrice()">
+                <select id="size" name="size" class="form-select" required>
                   <option value="">Select Size</option>
                   <option value="250g">250g</option>
                   <option value="500g">500g</option>
@@ -140,7 +140,7 @@
               <!-- frequency -->
               <div class="mb-3">
                 <label for="frequency" class="form-label">Frequency</label>
-                <select id="frequency" name="frequency" class="form-select" required onchange="calculatePrice()">
+                <select id="frequency" name="frequency" class="form-select" required>
                   <option value="">Select Frequency</option>
                   <option value="every-week">Every Week</option>
                   <option value="every-2-weeks">Every 2 Weeks</option>
@@ -198,6 +198,27 @@
                   <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
               </div>
           </div>
+      </div>
+    </div>
+
+    <!-- Discount Modal -->
+    <div class="modal fade" id="discountModal" tabindex="-1" aria-labelledby="discountModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="discountModalLabel">Lucky Day!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="discountModalBody">
+            <p>Get a special 10% discount on your first coffee subscription! Enter your email to claim the discount.</p>
+            <form id="discountForm">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="emailDiscount" placeholder="Enter your email" required>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Claim Your Discount</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
