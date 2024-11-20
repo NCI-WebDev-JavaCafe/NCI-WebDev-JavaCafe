@@ -1,4 +1,5 @@
-/* Set background image for blog page */
+/*Eli Dimitrova: Blog Page */
+/*Set background image for blog page */
 .blog-page {
     background-image: url('/images/blog-background.jpg');
     background-size: cover;
@@ -16,9 +17,9 @@
     width: 260px;
     height: 180px;
 }
+/* Finish style for Blog Page */
 
-
-/* Contact Us */
+/* Eli Dimitrova: Contact Us */
 /* Style Contact Us form*/
 .contact-us {
     background-image: url('../images/contact-us.jpg');
@@ -47,8 +48,9 @@
 .map-container {
     margin-top: 30px;
 }
+/* Finish style for contact us page */
 
-/* Style for Contact-Us modal confirmation */
+/* Eli Dimitrova: Style for Contact-Us modal confirmation */
 .modal-content {
     border-radius: 10px;
 }
@@ -66,7 +68,7 @@
     font-size: 16px;
 }
 
-/* Style for 'Thank You' modal confirmation */
+/* Eli Dimitrova: Style for 'Thank You' modal confirmation */
 #thankYouModal .modal-header {
     background-color: #28a745;
 }
@@ -78,9 +80,124 @@
 #thankYouModal .modal-body {
     font-size: 18px;
 }
+/*Finish style for modals */
+
+/* Eli Dimitrova: Footer */
+/* Footer container styling */
+.footer-custom {
+    background-color: #1b212a; 
+    color: #ffffff;
+  }
+
+/* Footer links list */
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-link-item {
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    color: #b8b8b8;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+/* Social media icons section in the footer */
+  .footer-social-icons {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer-social-item {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  .footer-social-link {
+    color: #b8b8b8;
+    text-decoration: none;
+  }
+
+  .footer-social-link:hover {
+    color: #ffffff;
+  }
+
+  .footer-social-item i {
+    transition: transform 0.3s ease;
+  }
+
+  .footer-social-item i:hover {
+    transform: scale(1.2);
+  }
+
+/* Footer copyright section */
+  .footer-copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    color: #b8b8b8;
+  }
+  
+  .footer-copyright-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-copyright-link:hover {
+    text-decoration: underline;
+  }
+
+  .footer-links td {
+    padding: 10px;
+    border-bottom: 1px solid #fffbfb;
+  }
+  
+  .footer-links tr:last-child td {
+    border-bottom: 1px solid #fffbfb;
+  }
+  
+  .footer-links td:first-child {
+    font-weight: bold;
+  }
+/* Finish style for Footer */
+
+/* Eli Dimitrova: Testimonials Section */
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-card h5 {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Carousel Controls */ 
+.carousel-control-prev-icon, .carousel-control-next-icon { 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; padding: 10px; 
+} 
+
+.carousel-control-prev:hover, .carousel-control-next:hover { 
+    background-color: rgba(0, 0, 0, 0.7); 
+}
 
 /* Subscription service - start */
-
 /*adapted from https://www.w3schools.com/cssref/pr_background-image.php and https://stackoverflow.com/questions/12605908/change-background-image-opacity*/
 .subscription-section {
   background-image: url("../images/coffee-beans.avif");
