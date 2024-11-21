@@ -1,3 +1,26 @@
+/* Eli Dimitrova: Navbar styling */
+.navbar-custom {
+  background-color: #28303d;
+  color: #ffffff;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #b8b8b8;
+}
+
+.navbar-toggler {
+  color: #fffbfb;
+  border: 3px solid #ffffff;
+}
+
+.navbar-toggler-icon { 
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fffbfb' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+}
+
 /*Eli Dimitrova: Blog Page */
 /*Set background image for blog page */
 .blog-page {
@@ -197,7 +220,7 @@
     background-color: rgba(0, 0, 0, 0.7); 
 }
 
-/* Subscription service - start */
+/* Tiago Dorigan: Subscription service - start */
 /*adapted from https://www.w3schools.com/cssref/pr_background-image.php and https://stackoverflow.com/questions/12605908/change-background-image-opacity*/
 .subscription-section {
   background-image: url("../images/coffee-beans.avif");
@@ -207,5 +230,4 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
 /* Subscription service - end */
