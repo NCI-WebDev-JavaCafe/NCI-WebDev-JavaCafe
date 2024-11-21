@@ -1,6 +1,5 @@
 
 // Pagination on Blog Page
-
 document.addEventListener("DOMContentLoaded", function() {
     const postsPerPage = 3;
     const posts = document.querySelectorAll('.blog-post');
@@ -74,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Read More Button Functionality
-
 document.addEventListener('DOMContentLoaded', function() {
     // Loop through all blog posts
     document.querySelectorAll('.blog-post').forEach(function(post) {
