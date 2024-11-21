@@ -35,6 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
           link.classList.remove("active");
         }
       });
-
     });
 });
