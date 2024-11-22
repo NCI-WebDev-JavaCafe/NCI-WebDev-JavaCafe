@@ -220,7 +220,14 @@
     background-color: rgba(0, 0, 0, 0.7); 
 }
 
-/* Tiago Dorigan: Subscription service - start */
+/*===============================================================================================================================================*/
+/*============================================================= TIAGO DORIGAN START =============================================================*/
+/*===============================================================================================================================================*/
+
+/*Color palette used: https://colorhunt.co/palette/a79277d1bb9eead8c0fff2e1*/
+
+/* Subscription service page styling */
+
 /*adapted from https://www.w3schools.com/cssref/pr_background-image.php and https://stackoverflow.com/questions/12605908/change-background-image-opacity*/
 .subscription-section {
   background-image: url("../images/coffee-beans.avif");
@@ -229,5 +236,123 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 0.5rem; /* rounded edges */
 }
-/* Subscription service - end */
+
+.subscription-body {
+  background-color: #FFF2E1;
+}
+
+.subscription-header {
+  background-color: #A79277;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.subscription-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subscription-header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Menu page styling */
+
+.menu-body {
+  background-color: #FFF2E1;
+}
+
+.menu-header {
+  background-color: #A79277;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.menu-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/*-------*/
+
+.menu-nav-tabs {
+  background-color: #D1BB9E;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.menu-nav-tabs .nav-link {
+  color: #A79277;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.menu-nav-tabs .nav-link.active {
+  background-color: #A79277;
+  border-radius: 0.5rem;
+}
+
+/*-------*/
+
+.menu-tab-content {
+  background-color: #EAD8C0;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+/* About us page styling */
+
+.about-body {
+  background-color: #FFF2E1;
+}
+
+.about-header {
+  background-color: #A79277;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.about-carousel-inner img {
+  border-radius: 0.5rem;
+}
+
+.about-main-text {
+  background-color: #EAD8C0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-card-header {
+  background-color: #A79277;
+  font-size: 1.5rem;
+}
+
+.about-card {
+  background-color: #EAD8C0;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+/*===============================================================================================================================================*/
+/*============================================================== TIAGO DORIGAN END ==============================================================*/
+/*===============================================================================================================================================*/
