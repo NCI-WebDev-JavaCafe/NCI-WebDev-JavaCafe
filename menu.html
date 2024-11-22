@@ -12,22 +12,22 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="menu-body">
 
   <!-- Navigation bar -->
   <div id="navbar-container"></div>
   <script src="./js/navbar.js"></script>
 
-  <div class="container pt-4">
-    <div class="container my-5">
-      <div class="text-center mb-5">
-        <h2>Our Menu</h2>
-        <p>Explore our selection of coffees and pastries.</p>
+  <div class="container mt-4 mb-4">
+    <div class="container mt-4 mb-4">
+      <div class="text-center mb-5 menu-header">
+        <h2 class="display-4">Our Menu</h2>
+        <p class="lead">Explore our selection of coffees and pastries.</p>
       </div>
 
       <!-- Tabbed Menu -->
        <!-- adapted from https://getbootstrap.com/docs/5.0/components/navs-tabs/ -->
-      <ul class="nav nav-tabs" id="menuTab" role="tablist">
+      <ul class="nav nav-tabs menu-nav-tabs" id="menuTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="hot-coffees-tab" data-bs-toggle="tab" data-bs-target="#hotCoffees" type="button" role="tab" aria-controls="hotCoffees" aria-selected="true">Hot Coffees</button>
         </li>
@@ -40,7 +40,7 @@
       </ul>
       
       <!-- tabs -->
-      <div class="tab-content" id="menuTabContent">
+      <div class="tab-content menu-tab-content" id="menuTabContent">
         
         <!-- Hot Coffees Tab -->
         <div class="tab-pane fade show active" id="hotCoffees" role="tabpanel" aria-labelledby="hot-coffees-tab">
@@ -291,7 +291,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-body text-center">
-            <img id="modalImage" class="img-fluid" alt="Selected Image">
+            <img id="modalImage" src="./images/coffee-beans.avif" class="img-fluid" alt="Selected Image">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" id="prevButton">Previous</button>
