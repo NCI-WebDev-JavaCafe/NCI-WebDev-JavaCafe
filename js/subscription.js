@@ -68,14 +68,14 @@ document.addEventListener("DOMContentLoaded", function() {
     event.preventDefault();
 
     // Show the confirmation modal
-    var confirmationModal = new bootstrap.Modal(document.getElementById("confirmationModal"));
+    const confirmationModal = document.getElementById("confirmationModal");
     confirmationModal.show();
 
     // If user clicks "Submit" in confirmation modal, show the "Thank You" modal
     document.getElementById("confirmSubmit").onclick = function() {
         
       confirmationModal.hide(); // Hide confirmation modal
-      var thankYouModal = new bootstrap.Modal(document.getElementById("thankYouModal"));
+      const thankYouModal = document.getElementById("thankYouModal");
       thankYouModal.show(); // Show thank you modal
 
       // Clear the fields
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   //----------------- DISCOUNT MODAL -----------------------
-  const discountModal = new bootstrap.Modal(document.getElementById("discountModal"));
+  const discountModal = document.getElementById("discountModal");
   let hasShownModal = false; // ensure modal only shows once
 
   //show discount modal after 7 seconds the page is loaded
