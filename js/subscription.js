@@ -68,14 +68,14 @@ document.addEventListener("DOMContentLoaded", function() {
     event.preventDefault();
 
     // Show the confirmation modal
-    var confirmationModal = new bootstrap.Modal(document.getElementById("confirmationModal"));
+    let confirmationModal = new bootstrap.Modal(document.getElementById("confirmationModal"));
     confirmationModal.show();
 
     // If user clicks "Submit" in confirmation modal, show the "Thank You" modal
     document.getElementById("confirmSubmit").onclick = function() {
         
       confirmationModal.hide(); // Hide confirmation modal
-      var thankYouModal = new bootstrap.Modal(document.getElementById("thankYouModal"));
+      let thankYouModal = new bootstrap.Modal(document.getElementById("thankYouModal"));
       thankYouModal.show(); // Show thank you modal
 
       // Clear the fields
