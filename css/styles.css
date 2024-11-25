@@ -191,6 +191,10 @@
 /* Finish style for Footer */
 
 /* Eli Dimitrova: Testimonials Section */
+#testimonials {
+  background-color: #EAD8C0;
+}
+
 .testimonial-card {
     background-color: white;
     border-radius: 10px;
@@ -226,6 +230,10 @@
 
 /*Color palette used: https://colorhunt.co/palette/a79277d1bb9eead8c0fff2e1*/
 
+body {
+  background-color: #FFF2E1;
+}
+
 /* Subscription service page styling */
 
 /*adapted from https://www.w3schools.com/cssref/pr_background-image.php and https://stackoverflow.com/questions/12605908/change-background-image-opacity*/
@@ -237,10 +245,6 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 0.5rem; /* rounded edges */
-}
-
-.subscription-body {
-  background-color: #FFF2E1;
 }
 
 .subscription-header {
@@ -260,10 +264,6 @@
 }
 
 /* Menu page styling */
-
-.menu-body {
-  background-color: #FFF2E1;
-}
 
 .menu-header {
   background-color: #A79277;
@@ -309,10 +309,6 @@
 }
 
 /* About us page styling */
-
-.about-body {
-  background-color: #FFF2E1;
-}
 
 .about-header {
   background-color: #A79277;
