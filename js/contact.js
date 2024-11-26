@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     modalContactForm();
 });
 
-//Function for contact us form modals
+// Function to handle the modal form for contact us
 function modalContactForm() {
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
@@ -12,24 +12,28 @@ function modalContactForm() {
         document.getElementById('confirmationModal').removeAttribute('inert');
         confirmationModal.show();
 
-        // Handle submit button on Confirmation and Thank you modal
-        document.getElementById('confirmSubmit').onclick = () => {
+        // Set up the "Submit" button inside the confirmation modal
+        document.getElementById('confirmSubmit').onclick = function() {
+            // Hide the confirmation modal
             confirmationModal.hide();
-            document.getElementById('confirmationModal').setAttribute('inert', '');
 
+            // Show the thank you modal after confirmation modal is hidden
             var thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
             document.getElementById('thankYouModal').removeAttribute('inert');
             thankYouModal.show();
 
-            // Modal is hidden after closing
-            thankYouModal._element.addEventListener('hidden.bs.modal', function() {
+            // Reset inert attribute for confirmation modal once hidden
+            confirmationModal._element.addEventListener('hidden.bs.modal', function () {
+                document.getElementById('confirmationModal').setAttribute('inert', '');
+            });
+
+            // Reset inert attribute when the thank you modal is hidden
+            thankYouModal._element.addEventListener('hidden.bs.modal', function () {
                 document.getElementById('thankYouModal').setAttribute('inert', '');
+
+                // Reset the form after the "Okay" button in the Thank You modal is clicked
+                document.getElementById('contactForm').reset(); // Reset the form fields
             });
         };
-
-        //An event listener to ensure that the confirmation modal is hidden
-        document.getElementById('confirmationModal').addEventListener('hidden.bs.modal', function () {
-            document.getElementById('confirmationModal').setAttribute('inert', '');
-        });
     });
 }

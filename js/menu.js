@@ -1,4 +1,3 @@
-
 // wait for the page to be completed loaded
 document.addEventListener("DOMContentLoaded", function() {
   
@@ -58,4 +57,3 @@ document.addEventListener("DOMContentLoaded", function() {
     modalImage.src = imageUrls[currentIndex];
   });
 });
-
