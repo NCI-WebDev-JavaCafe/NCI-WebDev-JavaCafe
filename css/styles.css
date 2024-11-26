@@ -40,6 +40,13 @@
     width: 260px;
     height: 180px;
 }
+
+/* Back to top button on blog page */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 /* Finish style for Blog Page */
 
 /* Eli Dimitrova: Contact Us */
