@@ -30,30 +30,29 @@ document.addEventListener("DOMContentLoaded", function() {
         prevButton.textContent = 'Previous';
         prevButton.classList.add('btn', 'btn-secondary', 'me-2');
         prevButton.disabled = currentPage === 1;
-        prevButton.addEventListener('click', () => {
+        prevButton.addEventListener('click', debounce(() => {
             if (currentPage > 1) {
                 currentPage--;
                 updatePagination();
                 showPostsForPage(currentPage);
+                window.scrollTo(0, 0);  // Scroll to the top
             }
-        });
+        }));
         paginationContainer.appendChild(prevButton);
 
         // Page buttons
         for (let i = 1; i <= totalPages; i++) {
-            // Create a new function for each iteration that captures the current value of i
-            (function(page) {
-                const pageButton = document.createElement('button');
-                pageButton.textContent = page;
-                pageButton.classList.add('btn', 'btn-secondary', 'me-2');
-                pageButton.disabled = page === currentPage;
-                pageButton.addEventListener('click', () => {
-                    currentPage = page;
-                    updatePagination();
-                    showPostsForPage(currentPage);
-                });
-                paginationContainer.appendChild(pageButton);
-            })(i);
+            const pageButton = document.createElement('button');
+            pageButton.textContent = i;
+            pageButton.classList.add('btn', 'btn-secondary', 'me-2');
+            pageButton.disabled = i === currentPage;
+            pageButton.addEventListener('click', debounce(() => {
+                currentPage = i;
+                updatePagination();
+                showPostsForPage(currentPage);
+                window.scrollTo(0, 0);  // Scroll to the top
+            }));
+            paginationContainer.appendChild(pageButton);
         }
 
         // Next button
@@ -61,14 +60,24 @@ document.addEventListener("DOMContentLoaded", function() {
         nextButton.textContent = 'Next';
         nextButton.classList.add('btn', 'btn-secondary', 'me-2');
         nextButton.disabled = currentPage === totalPages;
-        nextButton.addEventListener('click', () => {
+        nextButton.addEventListener('click', debounce(() => {
             if (currentPage < totalPages) {
                 currentPage++;
                 updatePagination();
                 showPostsForPage(currentPage);
+                window.scrollTo(0, 0);  // Scroll to the top
             }
-        });
+        }));
         paginationContainer.appendChild(nextButton);
+    }
+
+    // Debounce function to prevent rapid clicks
+    let debounceTimeout;
+    function debounce(callback) {
+        return function() {
+            clearTimeout(debounceTimeout);
+            debounceTimeout = setTimeout(callback, 300);
+        };
     }
 
     // Function to update the pagination buttons
@@ -146,3 +155,59 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+// Webshare API to share the blog post, code from: https://web.dev/patterns/web-apps/share?hl=en#html
+// Function to handle share button functionality
+function shareButton(buttonElement) {
+    const button = buttonElement;
+    
+    // Get the current page URL 
+    const currentUrl = window.location.href;
+    
+    // Share functionality when the button is clicked
+    button.addEventListener('click', async () => {
+        const title = document.title;
+        const text = document.title;
+        const url = currentUrl; 
+
+        // Feature detection to see if the Web Share API is supported.
+        if ('share' in navigator) {
+            try {
+                await navigator.share({
+                    url,
+                    text,
+                    title,
+                });
+                return;
+            } catch (err) {
+                // If the user cancels, an `AbortError` is thrown.
+                if (err.name !== "AbortError") {
+                    console.error(err.name, err.message);
+                }
+            }
+        }
+
+        // Fallback to use Twitter's Web Intent URL.
+        const shareURL = new URL('https://twitter.com/intent/tweet');
+        const params = new URLSearchParams();
+        params.append('text', text);
+        params.append('url', url);
+        shareURL.search = params;
+        window.open(shareURL, '_blank', 'popup,noreferrer,noopener');
+    });
+
+    // Fallback to Facebook sharing
+    const shareURLFacebook = new URL('https://www.facebook.com/sharer/sharer.php');
+    const paramsFacebook = new URLSearchParams();
+    paramsFacebook.append('u', currentUrl);
+    shareURLFacebook.search = paramsFacebook;
+    window.open(shareURLFacebook, '_blank', 'popup,noreferrer,noopener');
+}
+
+// Loop through each blog post and initialize the share button for each
+document.querySelectorAll('.blog-post').forEach(post => {
+    const shareButtonElement = post.querySelector('.share-button');
+    if (shareButtonElement) {
+        shareButton(shareButtonElement); 
+    }
+});
