@@ -183,6 +183,8 @@ function shareButton(buttonElement) {
                 // If the user cancels, an `AbortError` is thrown.
                 if (err.name !== "AbortError") {
                     console.error(err.name, err.message);
+                } else {
+                    return; // Exit if the user cancels the share
                 }
             }
         }
@@ -194,14 +196,14 @@ function shareButton(buttonElement) {
         params.append('url', url);
         shareURL.search = params;
         window.open(shareURL, '_blank', 'popup,noreferrer,noopener');
+        
+        // Fallback to Facebook sharing
+        const shareURLFacebook = new URL('https://www.facebook.com/sharer/sharer.php');
+        const paramsFacebook = new URLSearchParams();
+        paramsFacebook.append('u', currentUrl);
+        shareURLFacebook.search = paramsFacebook;
+        window.open(shareURLFacebook, '_blank', 'popup,noreferrer,noopener');
     });
-
-    // Fallback to Facebook sharing
-    const shareURLFacebook = new URL('https://www.facebook.com/sharer/sharer.php');
-    const paramsFacebook = new URLSearchParams();
-    paramsFacebook.append('u', currentUrl);
-    shareURLFacebook.search = paramsFacebook;
-    window.open(shareURLFacebook, '_blank', 'popup,noreferrer,noopener');
 }
 
 // Loop through each blog post and initialize the share button for each
