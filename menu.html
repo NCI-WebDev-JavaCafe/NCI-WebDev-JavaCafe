@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <title>The Java Cafe</title>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The Java Cafe - The best place to enjoy your coffee and more."> 
@@ -28,7 +27,7 @@
       </div>
 
       <!-- Tabbed Menu -->
-       <!-- adapted from https://getbootstrap.com/docs/5.0/components/navs-tabs/ -->
+      <!-- adapted from https://getbootstrap.com/docs/5.0/components/navs-tabs/ -->
       <ul class="nav nav-tabs menu-nav-tabs" id="menuTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="hot-coffees-tab" data-bs-toggle="tab" data-bs-target="#hotCoffees" type="button" role="tab" aria-controls="hotCoffees" aria-selected="true">Hot Coffees</button>
@@ -43,24 +42,20 @@
       
       <!-- tabs -->
       <div class="tab-content menu-tab-content" id="menuTabContent">
-        
         <!-- Hot Coffees Tab -->
         <div class="tab-pane fade show active" id="hotCoffees" role="tabpanel" aria-labelledby="hot-coffees-tab">
-          
           <div class="row my-4">
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-
               <!-- adapted from https://getbootstrap.com/docs/5.0/components/card/ -->
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-espresso.avif" class="card-img-top" alt="Espresso coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Espresso</h5>
+                  <h3 class="card-title">Espresso</h3>
                   <p class="card-text">A classic shot of strong, rich espresso.</p>
                 </div>
               </div>
-              
             </div>
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 
@@ -69,223 +64,197 @@
                   <img src="./images/menu-americano.avif" class="card-img-top" alt="Americano coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Americano</h5>
+                  <h3 class="card-title">Americano</h3>
                   <p class="card-text">Espresso diluted with hot water.</p>
                 </div>
               </div>
-              
+
             </div>
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-              
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-cappuccino.avif" class="card-img-top" alt="Cappuccino coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Cappuccino</h5>
+                  <h3 class="card-title">Cappuccino</h3>
                   <p class="card-text">Espresso with steamed milk and a layer of foam, often dusted with cocoa.</p>
                 </div>
               </div>
-
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-
               <!-- adapted from https://getbootstrap.com/docs/5.0/components/card/ -->
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-latte.avif" class="card-img-top" alt="Latte coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Latte</h5>
+                  <h3 class="card-title">Latte</h3>
                   <p class="card-text">Smooth espresso with steamed milk, lighter than a cappuccino.</p>
                 </div>
               </div>
-
             </div>
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-flat-white.avif" class="card-img-top" alt="Flat White coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Flat White</h5>
+                  <h3 class="card-title">Flat White</h3>
                   <p class="card-text">Espresso with micro-foamed milk.</p>
                 </div>
               </div>
-
             </div>
+
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-              
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-mocha.avif" class="card-img-top" alt="Mocha coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Mocha</h5>
+                  <h3 class="card-title">Mocha</h3>
                   <p class="card-text">Espresso with chocolate, steamed milk, and a touch of whipped cream.</p>
                 </div>
               </div>
-
             </div>
           </div>
-          
         </div>
 
         <!-- Iced Coffees Tab -->
         <div class="tab-pane fade" id="icedCoffees" role="tabpanel" aria-labelledby="iced-coffees-tab">
-          
           <div class="row my-4">
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-
               <!-- adapted from https://getbootstrap.com/docs/5.0/components/card/ -->
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-iced-americano.avif" class="card-img-top" alt="Iced Americano coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Iced Americano</h5>
+                  <h3 class="card-title">Iced Americano</h3>
                   <p class="card-text">Cold water with a shot of espresso over ice.</p>
                 </div>
               </div>
-
             </div>
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-iced-latte.avif" class="card-img-top" alt="Iced Latte coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Iced Latte</h5>
+                  <h3 class="card-title">Iced Latte</h3>
                   <p class="card-text">Espresso and milk poured over ice.</p>
                 </div>
               </div>
-
             </div>
+
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-              
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-iced-mocha.avif" class="card-img-top" alt="Iced Mocha coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Iced Mocha</h5>
+                  <h3 class="card-title">Iced Mocha</h3>
                   <p class="card-text">Espresso, chocolate, and milk over ice, topped with whipped cream.</p>
                 </div>
               </div>
-
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-
               <!-- adapted from https://getbootstrap.com/docs/5.0/components/card/ -->
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-cold-brew.avif" class="card-img-top" alt="Cold Brew coffee">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Cold Brew</h5>
+                  <h3 class="card-title">Cold Brew</h3>
                   <p class="card-text">Coffee steeped slowly in cold water for a smooth, less acidic taste.</p>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
 
         <!-- Pastries and Sweets Tabs -->
         <div class="tab-pane fade" id="pastries" role="tabpanel" aria-labelledby="pastries-tab">
-          
           <div class="row my-4">
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-
               <!-- adapted from https://getbootstrap.com/docs/5.0/components/card/ -->
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-scones.avif" class="card-img-top" alt="Scones">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Scones</h5>
+                  <h3 class="card-title">Scones</h3>
                   <p class="card-text">Classic Irish scones served with clotted cream and jam.</p>
                 </div>
               </div>
-
             </div>
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-bread.avif" class="card-img-top" alt="Irish Bread">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Irish Bread</h5>
+                  <h3 class="card-title">Irish Bread</h3>
                   <p class="card-text">Dense and hearty, served with butter or as a side.</p>
                 </div>
               </div>
-
             </div>
+
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-              
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-croissants.avif" class="card-img-top" alt="Croissants">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Croissants</h5>
+                  <h3 class="card-title">Croissants</h3>
                   <p class="card-text">Buttery and flaky.</p>
                 </div>
               </div>
-
             </div>
 
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-
               <!-- adapted from https://getbootstrap.com/docs/5.0/components/card/ -->
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-muffins.avif" class="card-img-top" alt="Muffins">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Muffins</h5>
+                  <h3 class="card-title">Muffins</h3>
                   <p class="card-text">Blueberry, chocolate chip, or lemon poppyseed.</p>
                 </div>
               </div>
-
             </div>
-            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-cookies.avif" class="card-img-top" alt="Cookies">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Cookies</h5>
+                  <h3 class="card-title">Cookies</h3>
                   <p class="card-text">Freshly baked cookies.</p>
                 </div>
               </div>
-
             </div>
+
             <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-              
               <div class="card mb-3">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                   <img src="./images/menu-cake-slice.avif" class="card-img-top" alt="Cake Slice">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">Cake Slices</h5>
+                  <h3 class="card-title">Cake Slices</h3>
                   <p class="card-text">Carrot cake or chocolate cake.</p>
                 </div>
               </div>
-
             </div>
           </div>
-          
         </div>
       </div>
-
     </div>
 
     <!-- modal for bigger images -->
