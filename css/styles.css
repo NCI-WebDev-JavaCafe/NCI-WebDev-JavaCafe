@@ -24,7 +24,7 @@
 /*Eli Dimitrova: Blog Page */
 /*Set background image for blog page */
 .blog-page {
-    background-image: url('/images/blog-background.jpg');
+    background-image: url('/images/blog-background.avif');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
