@@ -21,7 +21,6 @@
   <script src="./js/navbar.js"></script>
 
   <div class="container mt-4 mb-4">
-    
     <!-- Header Section -->
     <section class="text-center mt-4 mb-5 subscription-header">
       <h2 class="display-4">Get Freshly Roasted Coffee Delivered to You</h2>
@@ -31,60 +30,48 @@
     <!-- Subscription Plans Cards Section -->
     <section class="container text-center">
       <div class="row">
-
         <!-- d-flex: each column is flex container so we can align them with align-items-stretch, so they have the same height  -->
         <div class="col-md-4 d-flex align-items-stretch">
-          
           <!-- code adapted from https://getbootstrap.com/docs/5.3/components/card/ -->
           <div class="card text-center mb-3" >
             <img src="./images/subs-card1.avif" class="card-img-top subs-card-img" alt="Choose Your Coffee Preferences">
             <div class="card-body">
-              <h5 class="card-title">Choose Your Coffee Preferences</h5>
+              <h3 class="card-title">Choose Your Coffee Preferences</h3>
               <p class="card-text">Customize your coffee by selecting the type, grind level, roast, and size that best suit your taste.</p>
             </div>
           </div>
-
         </div>
-        <div class="col-md-4 d-flex align-items-stretch">
 
+        <div class="col-md-4 d-flex align-items-stretch">
           <!-- code adapted from https://getbootstrap.com/docs/5.3/components/card/ -->
           <div class="card text-center mb-3" >
             <img src="./images/subs-card2.avif" class="card-img-top subs-card-img" alt="Set Your Delivery Frequency">
             <div class="card-body">
-              <h5 class="card-title">Set Your Delivery Frequency</h5>
+              <h3 class="card-title">Set Your Delivery Frequency</h3>
               <p class="card-text">Choose the perfect delivery schedule to match your routine - every week, every two weeks, or monthly.</p>
             </div>
           </div>
-
         </div>
+
         <div class="col-md-4 d-flex align-items-stretch">
-          
           <!-- code adapted from https://getbootstrap.com/docs/5.3/components/card/ -->
           <div class="card text-center mb-3" >
             <img src="./images/subs-card3.avif" class="card-img-top subs-card-img" alt="Receive Fresh Coffee at Your Door">
             <div class="card-body">
-              <h5 class="card-title">Receive Fresh Coffee at Your Door</h5>
+              <h3 class="card-title">Receive Fresh Coffee at Your Door</h3>
               <p class="card-text">Sit back and relax as we deliver freshly roasted coffee to your door, ensuring a quality brew every time.</p>
             </div>
           </div>
-          
         </div>
-
       </div>
-
     </section>
 
     <!-- Form Section -->
     <section class="subscription-section my-4">
-
       <div class="row">
-
         <div class="col-md-8 mx-auto">
-
           <div class="container my-5">
-
             <h2 class="text-center mb-4">Subscription Form</h2>
-            
             <!-- code adapted from https://getbootstrap.com/docs/5.3/forms/overview/ -->
             <form id="subscriptionForm">
               <!-- type of coffee -->
@@ -102,7 +89,7 @@
                   <option value="decaf">Decaf</option>
                 </select>
               </div>
-        
+
               <!-- grind -->
               <div class="mb-3">
                 <label for="grind" class="form-label">Grind</label>
@@ -115,7 +102,7 @@
                   <option value="extra-fine">Extra-Fine Grind (Turkish Coffee)</option>
                 </select>
               </div>
-        
+
               <!-- roast -->
               <div class="mb-3">
                 <label for="roast" class="form-label">Roast</label>
@@ -126,7 +113,7 @@
                   <option value="dark">Dark</option>
                 </select>
               </div>
-        
+
               <!-- bag size -->
               <div class="mb-3">
                 <label for="size" class="form-label">Size</label>
@@ -137,7 +124,7 @@
                   <option value="1kg">1kg</option>
                 </select>
               </div>
-        
+
               <!-- frequency -->
               <div class="mb-3">
                 <label for="frequency" class="form-label">Frequency</label>
@@ -148,9 +135,9 @@
                   <option value="every-month">Every Month</option>
                 </select>
               </div>
-        
+
               <div class="my-3">
-                <h4>Total Price: €<span id="priceDisplay">0.00</span> per delivery</h4>
+                <h3>Total Price: €<span id="priceDisplay">0.00</span> per delivery</h3>
               </div>
 
               <!-- Submit Button -->
@@ -159,7 +146,6 @@
               </div>
             </form>
           </div>
-          
         </div>
       </div>
     </section>
@@ -170,7 +156,7 @@
       <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title" id="confirmationModalLabel">Confirm Subscription</h5>
+                  <h3 class="modal-title" id="confirmationModalLabel">Confirm Subscription</h3>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -189,7 +175,7 @@
       <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+                  <h3 class="modal-title" id="thankYouModalLabel">Thank You!</h3>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -207,7 +193,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="discountModalLabel">Lucky Day!</h5>
+            <h3 class="modal-title" id="discountModalLabel">Lucky Day!</h3>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" id="discountModalBody">
