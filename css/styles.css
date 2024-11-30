@@ -12,6 +12,10 @@
   color: #b8b8b8;
 }
 
+.navbar-custom .navbar-nav .nav-link.active {
+  color: #909090;
+}
+
 .navbar-toggler {
   color: #fffbfb;
   border: 3px solid #ffffff;
